@@ -1,4 +1,5 @@
 import { InspiredBy } from "../components/Common/InspiredBy"
+import { Container } from "../components/Redirect/Container"
 import { Features } from "../components/Redirect/Features"
 import { Heading } from "../components/Redirect/Heading"
 import { Pricing } from "../components/Redirect/Pricing"
@@ -33,9 +34,8 @@ const Redirect = () => {
 	const enterpriseFeatures = generateFeatures(baseFeatures.length - 1)
 
 	return (
-		<div className="flex flex-col justify-center items-center gap-4">
-			<section className="flex flex-col justify-center items-center md:flex-row md:flex-wrap gap-4 mt-16">
-
+		<>
+			<Container>
 				<PricingCardWrapper>
 					<Heading label="Basic" />
 					<Features features={basicFeatures} />
@@ -59,16 +59,15 @@ const Redirect = () => {
 					<Features features={enterpriseFeatures} />
 					<Pricing price={59.99} />
 				</PricingCardWrapper>
-
-			</section>
+			</Container>
 
 			<button
-				className="text-center w-1/6 min-w-fit rounded-md bg-pink-500 hover:bg-pink-600 transition-colors duration-200 text-white px-2 py-3 font-bold uppercase mx-auto mt-2">
+				className="flex justify-center w-1/6 min-w-fit rounded-md bg-pink-500 hover:bg-pink-600 transition-colors duration-200 text-white px-2 py-3 font-bold uppercase mx-auto mt-4">
 				Get Started
 			</button>
 
 			<InspiredBy href="https://redirect.pizza/pricing" label="Redirect Pizza Pricing" />
-		</div>
+		</>
 	)
 }
 
