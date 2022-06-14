@@ -1,9 +1,11 @@
+import { numberFormatter } from "../../utils"
+
 type Props = {
     noOfViews: number
 }
 
 export const NoOfViews = ({ noOfViews }: Props) => {
-    const formatted = new Intl.NumberFormat('en-IN').format(noOfViews)
+    const formatted = numberFormatter(noOfViews)
     return (
         <div className="text-center">
             <p>{formatted}</p>

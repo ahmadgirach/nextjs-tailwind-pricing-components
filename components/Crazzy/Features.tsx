@@ -1,4 +1,5 @@
 import React from "react"
+import { numberFormatter } from "../../utils"
 
 type Props = {
     features: string[]
@@ -13,7 +14,7 @@ export const Features = ({ features }: Props) => {
                         const splitted = feature.split("_")
                         if (splitted.length > 1) {
                             const [number, ...rest] = splitted
-                            const formatted = new Intl.NumberFormat('en-IN').format(parseFloat(number))
+                            const formatted = numberFormatter(number)
                             const formattedFeature = [formatted, ...rest].join(" ")
                             return (
                                 <li>&radic; {formattedFeature}</li>
