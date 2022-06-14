@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif']
+        primary: ['Fira Sans', 'sans-serif']
       },
       colors: {
         'primary-100': '#acbff0',
