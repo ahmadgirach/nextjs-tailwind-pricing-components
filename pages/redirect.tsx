@@ -1,4 +1,5 @@
 import { InspiredBy } from "../components/Common/InspiredBy"
+import { Meta } from "../components/Common/Meta"
 import { Container } from "../components/Redirect/Container"
 import { Features } from "../components/Redirect/Features"
 import { Heading } from "../components/Redirect/Heading"
@@ -35,6 +36,7 @@ const Redirect = () => {
 
 	return (
 		<>
+			<Meta title='Pricing Component - Redirect' />
 			<Container>
 				<PricingCardWrapper>
 					<Heading label="Basic" />

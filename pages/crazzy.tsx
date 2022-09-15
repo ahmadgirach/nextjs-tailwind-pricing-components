@@ -1,4 +1,5 @@
 import { InspiredBy } from "../components/Common/InspiredBy"
+import { Meta } from "../components/Common/Meta"
 import { Container } from "../components/Crazzy/Container"
 import { Features } from "../components/Crazzy/Features"
 import { Header } from "../components/Crazzy/Header"
@@ -15,6 +16,7 @@ const Crazzy = () => {
 
 	return (
 		<>
+			<Meta title='Pricing Component - Crazzy' />
 			<Container>
 				<PricingCardWrapper>
 					<Header name="Basic" price={0} />

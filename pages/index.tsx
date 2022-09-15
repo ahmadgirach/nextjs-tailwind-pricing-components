@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { InspiredBy } from '../components/Common/InspiredBy';
+import { Meta } from '../components/Common/Meta';
 import { Container } from '../components/Jazz/Container';
 import { PricingCard } from '../components/Jazz/PricingCard';
 
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Meta />
       <Container>
         <PricingCard
           label='Basic'

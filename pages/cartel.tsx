@@ -3,6 +3,7 @@ import { Features } from "../components/Cartel/Features"
 import { Header } from "../components/Cartel/Header"
 import { PricingCardWrapper } from "../components/Cartel/PricingCardWrapper"
 import { InspiredBy } from "../components/Common/InspiredBy"
+import { Meta } from "../components/Common/Meta"
 
 const Cartel = () => {
 
@@ -10,6 +11,7 @@ const Cartel = () => {
 
 	return (
 		<>
+			<Meta title='Pricing Component - Cartel' />
 			<Container>
 				<PricingCardWrapper>
 					<Header
